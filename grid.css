@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 80%;
+    background-color:blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar{
+    
+    width: 95%;
+    height: 80%;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+h1{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+.imgCont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+
+}
+.navLink{
+    margin-right: 20px;
+}
+.navLink ul li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.imgCont img{
+    width: 10%;
+    height: 40px;
+    margin-left: 15px;
+}
+.shopCont{
+    width: 95%;
+    height: 85%;
+    background-color: azure;
+    margin: 2.5%;
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+
+}
+.cardCont:hover{
+    transform: scale(1.1);
+}
+.cardCont {
+    /* width: 40%; */
+    transition: 2s;
+    margin: 5px;
+    border-radius: 5px;
+    row-gap: 5px;
+    column-gap: 10px;
+    background-color: rgba(255, 235, 205, 0.397);
+    border: 1px solid;
+
+}
+.cardCont img{
+    width: 100%;
+}
+.cardCont h4{
+    text-align: center;
+}
+.cardCont p{
+    text-align: center;
+    font-size: smaller;
+}
+.priceTag{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.priceTag button{
+    background-color: blueviolet;
+    width: 40px;
+    color: aliceblue;
+    border-radius: 7px;
+    border: 3px solid;
+    padding: 2px;
+    margin: 2px;
+}
+.hamBurger{
+    display: none;
+}
+
+
+@media only screen and (max-width: 579px){
+    .shopCont{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 393px){
+    .shopCont{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .navLink {
+        display: none;
+    }
+    .hamBurger{
+        display: block;
+        margin-right: 20px;
+    }
+    .imgCont{
+        margin-left: 0;
+    }
+}
